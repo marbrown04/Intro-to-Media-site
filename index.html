@@ -1,26 +1,80 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>GitHub Page for Intro to Media!</title>
-    <style>.l-box {padding: 1em;}</style>
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/grids.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="pure-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="./CSS/pure.css">
+    <!--<![endif]-->
+    <title>Noah Segal-Gould</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./CSS/pure-base.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+      $(function() {
+        var pull 		= $('#pull');
+          menu 		= $('nav ul');
+          menuHeight	= menu.height();
+
+        $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+
+        $(window).resize(function(){
+              var w = $(window).width();
+              if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+              }
+          });
+      });
+    </script>
   </head>
   <body>
+    <nav class="clearfix">
+      <ul class="clearfix">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/HTML/AboutMe.html">About Me</a></li>
+        <li><a href="/HTML/Sites.html">Sites</a></li>
+        <li><a href="/HTML/Resources.html">Resources</a></li>
+      </ul>
+      <a href="index.html" id="pull">Noah Segal-Gould</a>
+    </nav>
     <div class="pure-g">
-      <div class="pure-u-1-3">
+      <div class="pure-u-1">
+        <img class="pure-img" src="./images/banner.jpg">
+      </div>
+      <div class="pure-u-1 pure-u-md-1-4">
         <div class="l-box">
-          <p>I'm Noah and this is my site for Intro to Media. Take a look at my "<a href="/L235F16/HTML/AboutMe.html">About Me</a>."</p>
-          <p>Or take a look at my <a href="/L235F16/HTML/ImageEssay.html">Image Essay</a>.</p>
+          <h4>
+            This is a GitHub site which was created for Introduction to Media!
+          </h4>
+          <p>
+            It's also a responsive web site. It <i>responds</i> to changes in the size of the window in which it is viewed. 
+          </p>
+          <p>
+            I have two brothers and a sister. Ian and I usually get along pretty well:
+          </p>
+          <img style="display: block; margin: 0 auto;" class="pure-img" src="./images/NLSG+IHSG.jpg"/>
         </div>
       </div>
-      <div class="pure-u-1-3">
+      <div class="pure-u-1 pure-u-md-1-2">
         <div class="l-box">
-          <img class="pure-img" src="/L235F16/images/NLSG.jpg">
+          <p>
+            Check out The #BardItM Twitter hashtag:
+          </p>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/BardItM" data-widget-id="778360904912080896">#BardItM Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
       </div>
-      <div class="pure-u-1-3">
+      <div class="pure-u-1 pure-u-md-1-4">
         <div class="l-box">
-          <img class="pure-img" src="/L235F16/images/NLSG+IHSG.jpg">
+          <p>Sometimes, the sun hurts my eyes:</p>
+          <img class="pure-img" src="./images/sun.jpg">
         </div>
       </div>
     </div>
