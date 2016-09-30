@@ -1,24 +1,59 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>About Me: Noah Segal-Gould</title>
-    <style>
-      body {
-        background-color: #F0EAD6;
-      }
-    </style>
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="../pure-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="./CSS/pure.css">
+    <!--<![endif]-->
+    <title>Noah Segal-Gould</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./CSS/pure-base.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+      $(function() {
+        var pull 		= $('#pull');
+          menu 		= $('nav ul');
+          menuHeight	= menu.height();
+        $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+        $(window).resize(function(){
+              var w = $(window).width();
+              if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+              }
+          });
+      });
+    </script>
   </head>
-
   <body>
-    <p>Hey everyone, I'm Noah and sometimes I do things.</p>
-    <br>
-    <p>Sometimes I:</p>
-    <ul>
-      <li><p>Go to high school.<br><iframe width="560" height="315" src="https://www.youtube.com/embed/yYKzCChkL3o" frameborder="0" allowfullscreen></iframe></p></li>
-      <li><p>Spend time with my <i>Favorite</i> brother:</p><img src="/L235F16/images/NLSG+IHSG.jpg"></li>
-      <li><p>Make (funny) faces:</p><img src="/L235F16/images/NLSG.jpg"></li>
-      <li><p>Compile code:</p><img src="https://imgs.xkcd.com/comics/compiling.png"></li>
-      <li><p>Make websites:</p><a href="http://segal-gould.com/">Segal-Gould.com</a></li>
-      <li><p>Go to class:</p><table><tr><th>Weekday</th><th>Class 1</th><th>Class 2</th></tr><tr><td>Monday</td><td>1:30-2:50</td><td>3:10-4:30</td></tr><tr><td>Tuesday</td><td>10:10-11:30</td><td>3:10-4:30</td></tr><tr><td>Wednesday</td><td>1:30-2:50</td><td>3:10-4:30</td></tr><tr><td>Thursday</td><td>10:10-11:30</td><td>3:10-4:30</td></tr></table></li>
-    </ul>
+    <nav class="clearfix">
+      <ul class="clearfix">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./AboutMe.html">About</a></li>
+        <li><a href="./Sites.html">Events</a></li>
+        <li><a href="./Resources.html">Resources</a></li>
+      </ul>
+      <a href="../index.html" id="pull">Noah Segal-Gould</a>
+    </nav>
+    <div class="l-box">
+      <h2>Hey everyone, I'm Noah and sometimes I do things.</h2>
+      <br>
+      <p>Sometimes I:</p>
+      <ul>
+        <li><p>Go to high school.<br><iframe width="560" height="315" src="https://www.youtube.com/embed/yYKzCChkL3o" frameborder="0" allowfullscreen></iframe></p></li>
+        <li><p>Spend time with my <i>Favorite</i> brother:</p><img src="../images/NLSG+IHSG.jpg"></li>
+        <li><p>Make (funny) faces:</p><img src="../images/NLSG.jpg"></li>
+        <li><p>Compile code:</p><img src="https://imgs.xkcd.com/comics/compiling.png"></li>
+        <li><p>Make websites:</p><a href="http://segal-gould.com/">Segal-Gould.com</a></li>
+        <li><p>Go to class:</p><table><tr><th>Weekday</th><th>Class 1</th><th>Class 2</th></tr><tr><td>Monday</td><td>1:30-2:50</td><td>3:10-4:30</td></tr><tr><td>Tuesday</td><td>10:10-11:30</td><td>3:10-4:30</td></tr><tr><td>Wednesday</td><td>1:30-2:50</td><td>3:10-4:30</td></tr><tr><td>Thursday</td><td>10:10-11:30</td><td>3:10-4:30</td></tr></table></li>
+      </ul>
+    </div>  
   </body>
 </html>
