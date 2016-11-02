@@ -5156,7 +5156,7 @@
 			return e[0] = n, e[1] = t.match(/[\d.\-\+]*\s*(.*)/)[1] || "", e
 		}
 	}, function(t, e) {
-		t.exports = '<a href="#" id="pause-resume">Pause ||</a>\n<a href="#" id="skip-animation">Skip Animation --></a>\n<span style="float:right">\n<a href="http://segal-gould.com">Segal-Gould.com</a>\n<a href="https://github.com/segal-gould">GitHub</a>\n<a href="https://github.com/segal-gould/segal-gould.github.io/blob/master/app.js">View Source</a>\n</span>\n'
+		t.exports = '<a href="#" id="pause-resume">Pause ||</a>\n<a href="#" id="skip-animation">Skip Animation --></a>\n<span style="float:right">\n<a href="http://segal-gould.com">Segal-Gould.com</a>\n<a href="https://github.com/segalgouldn">GitHub</a>\n<a href="https://github.com/STRML/strml.net/blob/master/app.js">View Source</a>\n</span>\n'
 	}, function(t, e) {
 		t.exports = "Noah Segal-Gould was born and raised in Southern Connecticut. \nNoah has a passion for learning and studies Computer Science at Bard College. \n\nHe graduated from the Sound School in New Haven, Connecticut in 2014 and started at Bard that same year. \nHis interests include digital humanities, philosophy, linguistics, programming, and general pedantry. \n\nEmail him at segalgouldn@gmail.com.";
 	}, function(t, e) {
